@@ -29,7 +29,7 @@ class Passenger{
     this.id = ++passengerIds
     store.passengers.push(this)
   }
-  
+
 }
 
 let tripIds = 0
