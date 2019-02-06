@@ -31,7 +31,7 @@ class Passenger{
   }
   trips(){
     return store.trips.filter(trip => {
-      return trip.passengerId === this.id
+      return trip.passengerId === this.id 
     })
   }
   drivers(){
@@ -43,7 +43,7 @@ class Passenger{
 
 let tripIds = 0
 class Trip{
-  constructor(name, driver, passenger){
+  constructor(driver, passenger){
     this.id = ++tripIds
     this.driverId = driver.id
     this.passengerId = passenger.id
