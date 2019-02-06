@@ -15,12 +15,11 @@ class Driver{
       return trip.driverId === this.id
     }).bind(this)
   }
-  // passengers(){
-  //   return store.passengers.filter(
-  //     function(passenger){
-  //       return passenger.driverId === this.id
-  //   }).bind(this)
-  // }
+  passengers(){
+    return store.passengers.filter(function(passenger){
+      return passenger.driverId === this.id
+    }).bind(this)
+  }
 }
 
 let passengerIds = 0
